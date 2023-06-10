@@ -1,13 +1,14 @@
 'use client';
 
+import { FC } from 'react';
 import { CustomButtonProps } from '@/types';
 
-const CustomButton = ({
+const CustomButton: FC<CustomButtonProps> = ({
   title,
   containerStyles,
   handleClick,
   btnType,
-}: CustomButtonProps) => (
+}) => (
   <button
     disabled={false}
     type={btnType || 'button'}
