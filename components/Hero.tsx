@@ -1,3 +1,5 @@
+'use client';
+
 import { FC } from 'react';
 import CustomButton from './CustomButton';
 import Image from 'next/image';
@@ -21,7 +23,7 @@ const Hero: FC<HeroProps> = ({}) => {
 
         <CustomButton
           title="Explore Cars"
-          containerStyles="bg-primary-blue"
+          containerStyles="bg-primary-blue text-white rounded-full mt-10"
           handleClick={handleScroll}
         />
       </div>
@@ -30,9 +32,7 @@ const Hero: FC<HeroProps> = ({}) => {
         <div className="hero__image">
           <Image src="/hero.png" alt="hero" fill className="object-contain" />
         </div>
-        <div className="hero__image-overlay">
-          
-        </div>
+        <div className="hero__image-overlay" />
       </div>
     </div>
   );
